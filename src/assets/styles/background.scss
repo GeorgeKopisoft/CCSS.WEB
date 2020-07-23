@@ -1,0 +1,18 @@
+@import "color.scss";
+
+.bg-theme {
+    background-color: $darkgray !important;
+}
+
+.bg-ok {
+    background-color: $ok !important;
+}
+
+.bg-start {
+    background: linear-gradient(to bottom right,rgba(0,0,0,.1) 30%,rgba(0,0,0,.1) 70%)
+        ,url(../images/bg_office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+}

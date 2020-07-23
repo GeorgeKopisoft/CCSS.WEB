@@ -1,0 +1,119 @@
+@import "background.scss";
+@import "color.scss";
+
+html, p, label, small, a , h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+}
+
+.border-nav{
+    
+    &::after{
+        border-bottom: 1px solid $action;
+        content: '';
+        display: block;
+        transform: scaleY(0);
+        transition: transform 250ms ease-in-out;
+    }
+
+    &:hover::after{
+        transform: scaleY(1);
+    }
+
+    &:active::after{
+        transform: scaleY(1);
+    }
+}
+
+.dropdown-menu{
+    background-color: lighten($color: $darkgray, $amount: 10) !important;
+}
+
+.navbarActive {
+    margin: 1rem;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.transition-all {
+    transition: all ease-in-out 0.5s;
+}
+
+.MuiInput-input, .MuiIconButton-label {
+    color: $ice !important
+}
+
+.date-picker-dialog{
+    color: white !important;
+}
+
+ .MuiButtonBase-root, .MuiButton-label, .MuiTypography-body1, .MuiTypography-body2{
+    color: black !important;
+}
+
+.progress-bar {
+    color: black !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+  /********************/
+ /*** MEDIA QUERYS ***/
+/********************/
+
+// Large devices (desktops, less than 1200px)
+@media screen and (min-width: 1201px) {
+    .navbarActive {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }    
+}
+
+// Large devices (desktops, less than 1200px)
+@media screen and (min-width : 992px)
+              and (max-width: 1200px) {
+    
+    .navbarActive {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media screen and (min-width : 768px)
+              and (max-width: 991px) {
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media screen and (min-width : 577px)
+              and (max-width: 767px) { 
+    
+}
+
+@media screen and (min-width : 1px)
+              and (max-width: 576px) { 
+    
+
+}

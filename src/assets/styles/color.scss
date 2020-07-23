@@ -1,0 +1,15 @@
+
+$action: #fbfd8a;
+$darkgray: #282c34;
+$ice: #61dafb;
+$ok: #00c853;
+$error: #ff5252;
+
+$theme-colors: (
+    "action": $action,
+    "darkgray": $darkgray,
+    "ice": $ice,
+    "error": $error,
+);
+    
+@import "~bootstrap/scss/bootstrap";
